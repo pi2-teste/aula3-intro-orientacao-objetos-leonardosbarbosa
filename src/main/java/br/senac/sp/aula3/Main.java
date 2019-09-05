@@ -23,8 +23,8 @@ public class Main {
             throw new Error("EU esperava que "+a+" fosse igual a "+b);
         }
     }
+    
 
-/*
     public static void testar_atributos() {
         Carro carro1 =  new Carro();
         Carro carro2 =  new Carro();
@@ -37,8 +37,8 @@ public class Main {
         assertEqual(carro2.getCor(), "prata");
         System.out.println("Parabéns, o teste de atributos está correto!");  
     }
-*/
-/*
+
+
     public static void testar_descricao() {
         Carro carro1 =  new Carro();
         Carro carro2 =  new Carro();
@@ -51,8 +51,8 @@ public class Main {
         assertEqual(carro3.descreve(), "Um carro");
         System.out.println("Parabéns, o teste da descrição está correto!");
     }
-*/
-/*    
+
+    
     public static void testar_gasolina1() {
         Carro carro1 = new Carro();
         assertEqual(carro1.getGasolina(), 20);
@@ -60,8 +60,8 @@ public class Main {
         assertEqual(carro1.getGasolina(), 30);
         System.out.println("Parabéns, o teste 1 da gasolina está correto!");
     }
-*/
-/*  
+
+
     public static void testar_gasolina2() {
         Carro carro1 = new Carro();
         assertEqual(carro1.getGasolina(), 20);
@@ -71,8 +71,8 @@ public class Main {
         assertEqual(carro1.getGasolina(), 40);
         System.out.println("Parabéns, o teste 2 da gasolina está correto!");
     }
-*/
-/*    
+
+    
     public static void testar_max_gasolina() {
         Carro carro1 = new Carro(30);
         Carro carro2 = new Carro(50);
@@ -88,17 +88,29 @@ public class Main {
         assertEqual(carro2.getGasolina(), 45);
         System.out.println("Parabéns, o teste max gasolina está correto!");
     }
-*/
+
     
      /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //testar_atributos();
-        //testar_descricao();
-        //testar_gasolina1();
-        //testar_gasolina2();
+        testar_atributos();
+        testar_descricao();
+        testar_gasolina1();
+        testar_gasolina2();
         //testar_max_gasolina();
+        
+     Carro meuCarro = new Carro();
+     meuCarro.setModelo("Fiat");
+     
+     Carro carroRodizio = new Carro();
+     carroRodizio.setModelo("Corsa");
+     carroRodizio.setCor("Prata");
+     
+     
+     
+     //JOptionPane.showMessageDialog(null, carroRodizio.getModelo() + " - " + carroRodizio.getCor(), "teste", 1);
+    
     }
     
 }
